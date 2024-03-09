@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://raunak1089.github.io/Required-files/Inferencia/logo-removebg_4KB.png">
+
+    <title>Inferencia 2K24</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Nova+Oval&family=Rubik+Pixels&family=Tilt+Prism&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> -->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">-->
+<script src="https://raunak1089.github.io/all_scripts/fontawesome.js"></script>
+</head>
+<style>
+@media screen and (max-width:1200px){
+
+        .heading{
+          font-size: 12px !important;
+
+        }
+        #image{
+            height: 20% !important;
+      width:20% !important;
+      border:2px solid black !important;
+        }
+
+    }
+    body{
+        background: black !important;
+    }
+    nav{
+        background:rgba(225, 220, 223,0.5);
+        max-height:12%;
+      }
+    .nav_head{
+      width:63%;
+    }
+
+    .nova>li>a{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        border-radius: 0.6em;
+        transition: all 0.25s;
+
+    }
+    .nova>li>a:hover{
+        background-color: aqua;
+        font-weight:bold;
+
+        text-shadow: rgb(225, 220, 223) 0.1em 0.1em 0.1em;
+        box-shadow: rgb(95, 94, 94) 0.1em 0.1em 0.1em;
+        margin-right:0.9em;
+    }
+    #image{
+      height: 8%;
+      width:8%;
+      border:3px solid black;
+      border-radius: 50%;
+    }
+    .paragraph{
+      font-size: 0.8em;
+      font-family:'Comic Neue';
+    }
+    .heading{
+        font-family:'Comic Neue';
+    }
+
+
+    footer {
+      background-color: black;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      height:10%;
+    }
+
+    .footer-icons a {
+      font-size:1.5em;
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+</style>
+<body>
+
+
+        <div class="sticky-top">
+          <nav class="navbar navbar-expand-lg bg-info-subtle">
+              <div class="container-fluid">
+                 <a class="navbar-brand nav_head" href="#"><img  src="/static/rkm.png" alt="Inferencia" id="image"> <div class="d-inline-block align-text-top mx-2 heading">Ramakrishna Mission Residential College <p class="paragraph">Narendrapur, Kolkata - 700103</p></div></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-rg-0 nova">
+
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-sharp fa-light fa-house fa-fade"></i> Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/register"><i class="fa-regular fa-user fa-beat"></i> Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/#event"><i class="fa-solid fa-calendar-days fa-beat-fade"></i> Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="https://rkmrc.in/ug-departments/statistics/" target="_blank"><i class="fas fa-sharp fa-light fa-circle-info fa-shake"></i> About Us</a>
+                    </li
+
+
+
+
+                  </ul>
+
+                </div>
+              </div>
+            </nav>
+        </div>
+            
+<style>
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+   @import url('https://fonts.googleapis.com/css?family=Anta:400,500,600,700&display=swap');
+   @import url('https://fonts.googleapis.com/css?family= Comfortaa:400,500,600,700&display=swap');
+
+
+   @media screen and (max-width:1200px){
+        .container {
+      height: fit-content !important;
+      width: 93vw !important;
+
+    }
+    .flashing-button{
+        font-size:15px !important;
+    }
+    .clock {
+      font-size: 1.2em !important;
+    }
+
+    .card{
+      width:93vw !important;
+    }
+    .slideshow-container{
+      max-width: 93vw !important;
+    }
+    .countdown{
+        width:95vw !important;
+    }
+    }
+  body{
+    background-color: black;
+    height: 100vh;
+    font-family: Montserrat;
+  }
+  .container {
+
+
+    background: transparent;
+    backdrop-filter: blur(3px);
+    color: white;
+    height: fit-content;
+    width: 50vw;
+    /* border: 2px solid white; */
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+     box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border: 0.5px solid white;
+    border-radius: 1em;
+
+
+  }
+
+
+
+.homepage {
+
+  width: 100%;
+  height: fit-content;
+  background-image: url("/static/background3.jpg");
+
+
+  }
+
+
+  h2,h3 {
+      font-family: sans;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 2.8em;
+  }
+
+
+  .countdown {
+
+    height: 10vh;
+    width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    background: transparent;
+
+  }
+  h5,h6{
+      font-family: Poppins;
+      color:#249;
+      font-weight: bold;
+
+    }
+
+  .imglogo {
+    height: 48px;
+    width: 48px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+
+  .clock {
+    font-size: 2em;
+    color: white;
+  }
+
+  .slideshow-container {
+    max-width: 50vw;
+    position: relative;
+    margin: auto;
+    border-radius: 10%;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img {
+    width: 98%;
+    height: auto;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 98%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .flashing-button {
+    animation: flash 1s infinite alternate;
+    background-color: #ff4500;
+    color: black;
+    font-size: 24px;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    font-family: "Anta";
+  }
+  .catchy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:transparent;
+
+  }
+  @keyframes flash {
+    from { background-color: red; }
+    to {  background-color:orange; }
+  }
+  .card{
+      width:50vw;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  }
+    .timer-container {
+        background-color: transparent;
+        border-radius: 10px;
+        padding:0.5em;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        text-align: center;
+        color:#f2f2f2;
+        backdrop-filter: blur(10px);
+        border:0.2px solid white;
+    }
+
+
+
+
+    #countdown {
+        font-size: 15px;
+        margin-top: 20px;
+
+    }
+
+/*  HACKERRANK COUNTDOWN */
+
+    .fill-alt-grey-lt {
+      border: 0px;
+      font-family: 'Poppins';
+      font-size: 16px;
+      margin: 0px;
+      outline: 0px;
+      vertical-align: baseline;
+      color: white;
+      text-align: center !important;
+      transform: scale(0.6);
+    }
+
+    .timer_box {
+      border: 0px;
+      font-family: 'Poppins';
+      margin: auto -24px;
+      outline: 0px;
+      vertical-align: baseline;
+      width: 300px;
+      padding: 20px 0px;
+    }
+
+    .timer {
+        border: 0px;
+        margin: 0px;
+        outline: 0px;
+        vertical-align: baseline;
+        width: 65px;
+        display: inline-block;
+        background: linear-gradient(130deg, white, rgb(8 81 116));
+        color: rgb(255 255 255);
+        border-radius: 5px;
+        height: 58px;
+        padding: 6px 0px 1px;
+        box-shadow: 0px 5px 8px 0px black;
+    }
+
+    .psB {
+      border: 0px;
+      font-weight: 500;
+      line-height: 1.33333em;
+      font-size: 2.525em;
+      margin: 0px;
+      outline: 0px;
+      vertical-align: baseline;
+      color: inherit;
+      padding-bottom: 10px;
+    }
+
+    .num {
+      border: 0px;
+      font-weight: 600;
+      line-height: 1.1;
+      font-size: 24px;
+      margin: 0px;
+      outline: 0px;
+      display: block;
+    }
+    p{
+      text-align: justify;
+text-justify: inter-word;
+    }
+
+</style>
+
+
+<div class="homepage p-3">
+  <div class="countdown">
+    <img src="/static/inferencialogo.jpg" alt="inferencia" class="imglogo">
+
+    <div class="fill-alt-grey-lt text-center">
+    <div class="timer_box msT mjB" id="block-timer">
+      <h5 class="psB" id="block-timer-head">Coming in</h5>
+      <div class="timer">
+        <span class="num" id="count-days">30</span>
+        <span id="count-days-pf">days</span>
+      </div>
+      &nbsp;
+      <div class="timer">
+        <span class="num" id="count-hrs">15</span>
+        <span id="count-hrs-pf">hrs</span>
+      </div>
+      &nbsp;
+      <div class="timer">
+        <span class="num" id="count-mins">19</span>
+        <span id="count-mins-pf">mins</span>
+      </div>
+      &nbsp;
+      <div class="timer">
+        <span class="num" id="count-secs">32</span>
+        <span id="count-secs-pf">secs</span>
+      </div>
+    </div>
+  </div>
+
+    <img src="/static/dostlogo.jpg" alt="dost" class="imglogo mx-2">
+
+
+
+
+  </div>
+  <div class="catchy">
+  <div class="container my-3">
+
+    <h2>Welcome to Inferencia 2k24</h2>
+    <p>Welcome to the Department of Statistics at Ramakrishna Mission Residential College (Autonomous).
+Though Statistics was taught as a pass subject as early as 1960, the Dept. of Statistics emerged as an Honours Department a couple of years later. Ever since, it has had many achievements to its credit, particularly in respect of academic performance by its students in University exams. From 2022, a feather has been added to it's holy cap named INFERENCIA.
+It is still in a callow stage yet has achieved quite a lot. In a journey of highs, optimism and challenges we are glad to host you for a 2024 supernova.</p>
+    <div class="catchy m-2">
+    <button class="flashing-button" onclick="redirectToPage1()">Register here</button>
+    <button class="flashing-button" onclick="scrollToElement('.card.my-3')">Events</button>
+
+<script>
+  function redirectToPage1() {
+    window.location.href = '/register'; // Replace 'page1.html' with the actual URL of your first page
+  }
+
+  function redirectToPage2() {
+    window.location.href = '#'; // Replace 'page2.html' with the actual URL of your second page
+  }
+
+  function scrollToElement(selector) {
+    var element = document.querySelector(selector);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+</script>
+
+
+  </div>
+  </div>
+  </div>
+  <div class="slideshow-container" onmouseenter="stopSlideshow()" onmouseleave="startSlideshow()">
+    <div class="mySlides">
+      <img src="/static/photo1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="/static/photo2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="/static/photo3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="/static/photo4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="/static/photo5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="/static/photo6.jpg" style="width:100%">
+    </div>
+
+
+  </div>
+
+  <div class="catchy">
+    <div class="card my-3" id="event">
+      <img src="/static/SPM.jpg" class="card-img-top guest" alt="SPM">
+      <div class="card-body">
+        <h5 class="card-title">Sri Sukharanjan Chakraborty Memorial Talk by Prof. Shyamaprasad Mukherjee</h5>
+        <p class="card-text"><h5>About the Speaker:</h5></p>
+        <p class="card-text">
+
+ &emsp;&emsp;He received an M.Sc. in Statistics in 1960 and Ph.D. in Statistics in 1967 from University of Calcutta. After a short stint of teaching in the Presidency College, Calcutta, he joined the University of Calcutta as a lecturer in Statistics in 1964.
+</p><h5>Accolades:</h5><p class="card-text">&emsp;&emsp;Areas of research contributions:
+Prof. Mukherjee has done extensive research work in Applied Probability, Parametric and Bayesian Estimation, Reliability Analysis, Quality Management, and Operations Research; published more than sixty research papers and review and expository articles; and supervised twenty one Ph.D. students. He was the President of the Operational Research Society of India as well as of the Association of Asian-Pacific Operational Research Societies (APORS).
+</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+
+
+</div>
+<div class="catchy">
+    <div class="card mb-3" >
+      <img src="/static/stochastoligaLogo.jpg" class="card-img-top guest" alt="SPM">
+      <div class="card-body">
+        <h3 class="card-title">Stochast-O-Liga</h3>
+        <p class="card-text"><h5>Prelims:</h5>
+ Evince your mathematical mettle as the clock ticks.
+<br>
+<br>
+<h5>Brainstorming:</h5>
+Prepare for a statistical heist, solve complex problems and claim your treasure trove.
+<br>
+<br>
+<h5>Chronicles:</h5>
+Assay your familiarity with the stalwarts of Mathematics and Statistics.
+<br><br>
+<h5>Statcipher:</h5>
+ Flex your problem solving muscles to decipher algorithms and more.
+<br><br>
+<h5>Stat-e-gic:</h5>
+Embark on the Statistical Odyssey! Plot a course with the hidden clues to find the answers.
+<br><br>
+<h5>Blitz: </h5>
+Feel the heat as you blaze through rapid fire rounds of statistical trivia.
+<br><br>
+<h5>Endgame:</h5>
+Navigate through this round of statistical maze, predict the answer and emerge victorious.</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+
+
+</div>
+
+<!-- <div class="slideshow">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/photo1.jpg" class="d-block w-10 photo" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/photo2.jpg" class="d-block w-10 photo" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/photo3.jpg" class="d-block w-10 photo" alt="...">
+      </div>
+    </div>
+  </div> -->
+
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    slideshowTimeout = setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+
+
+    function plusSlides(n) {
+        clearTimeout(slideshowTimeout);
+        showSlides(slideIndex += n);
+    }
+
+    function stopSlideshow() {
+        clearTimeout(slideshowTimeout);
+    }
+
+    function startSlideshow() {
+        showSlides();
+    }
+
+
+
+    function updateCountdown() {
+      const deadline = new Date("2024-04-04T10:30:00").getTime();
+      const now = new Date().getTime();
+      const timeLeft = deadline - now;
+
+      if (timeLeft <= 0) {
+        document.querySelector("div.fill-alt-grey-lt").remove();
+        clearInterval(interval);
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("count-days").innerText = formatTime(days);
+      document.getElementById("count-hrs").innerText = formatTime(hours);
+      document.getElementById("count-mins").innerText = formatTime(minutes);
+      document.getElementById("count-secs").innerText = formatTime(seconds);
+    }
+
+    function formatTime(time) {
+      return time < 10 ? "0" + time : time;
+    }
+
+    const interval = setInterval(updateCountdown, 1000);
+
+    updateCountdown();
+
+
+
+
+//  GYROSCOPE SENSOR _____________________
+
+function handleOrientation(event) {
+  var x = event.beta;  // In degree in the range [-180,180], x, 'front to back'
+  var y = event.gamma; // In degree in the range [-90,90], y, 'left to right'
+  var z = event.alpha; // 0-360, z, compass orientation
+
+  let timer_boxes = document.querySelectorAll('.timer');
+  timer_boxes.forEach((box, index) => {
+    // Adjust box shadow based on device orientation
+    box.style.boxShadow = `${2*x/180}px ${2*y/90}px ${2*z/360}px rgba(0, 0, 0, 0.5)`;
+  });
+}
+
+window.addEventListener('deviceorientation', handleOrientation);
+
+
+
+
+</script>
+</div>
+
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+    
+
+<footer class="sticky-down">
+    <div class="footer-icons">
+      <a href="tel:+918779565638"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://www.facebook.com/people/Inferencia-2k24/100083186236126"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/inferencia2k24"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/918779565638"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:inferencia.rkmrc@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>
